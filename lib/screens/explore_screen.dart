@@ -12,23 +12,30 @@ class ExploreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-// 1
+    // 1
     return FutureBuilder(
       // 2
       future: mockService.getExploreData(),
       // 3
       builder: (context, AsyncSnapshot<ExploreData> snapshot) {
-        // TODO: Add Nested List Views
         // 4
         if (snapshot.connectionState == ConnectionState.done) {
           // 5
-          final recipes = snapshot.data?.todayRecipes ?? [];
-          return TodayRecipeListView(recipes: recipes);
-        } else {
-          // 6
-          return const Center(
-            child: CircularProgressIndicator(),
+          return ListView(
+            // 6
+            scrollDirection: Axis.vertical,
+            children: [
+              // 7
+              TodayRecipeListView(recipes: snapshot.data?.todayRecipes ?? []),
+              // 8
+              const SizedBox(height: 16),
+              // 9
+              FriendPostListView(friendPosts: snapshot.data?.friendPosts ?? []),
+            ],
           );
+        } else {
+          // 10
+          return const Center(child: CircularProgressIndicator());
         }
       },
     );
