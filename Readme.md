@@ -1,8 +1,8 @@
 # Grocery scrollable
 A social recipe app to keep track of new dishes, and share with friends.
 
-![](https://github.com/luigimicco/flutter_grocery_scrollable/blob/master/assets/screenshots/firstpage.png?raw=true = 100px)
-![](https://github.com/luigimicco/flutter_grocery_scrollable/blob/master/assets/screenshots/secondpage.png?raw=true = 100px)
+![](https://github.com/luigimicco/flutter_grocery_scrollable/blob/master/assets/screenshots/firstpage.png = 100px)
+![](https://github.com/luigimicco/flutter_grocery_scrollable/blob/master/assets/screenshots/secondpage.png = 100px)
 ## Key points
 
  - Three main categories of widgets are: structure and navigation; displaying information; and, positioning widgets.
