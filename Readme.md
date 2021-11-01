@@ -1,5 +1,8 @@
 # Grocery scrollable
 A social recipe app to keep track of new dishes, and share with friends.
+
+![](/assets/screenshots/firstpage.png = 100px)
+![](/assets/screenshots/secondpage.png = 100px)
 ## Key points
 
  - Three main categories of widgets are: structure and navigation; displaying information; and, positioning widgets.
