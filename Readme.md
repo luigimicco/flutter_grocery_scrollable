@@ -1,5 +1,5 @@
-# Fooderlich scrollable
-
+# Grocery scrollable
+A social recipe app to keep track of new dishes, and share with friends.
 ## Key points
 
  - Three main categories of widgets are: structure and navigation; displaying information; and, positioning widgets.

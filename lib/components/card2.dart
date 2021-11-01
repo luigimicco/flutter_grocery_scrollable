@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../fooderlich_theme.dart';
+import '../custom_theme.dart';
 import '../models/models.dart';
 import 'author_card.dart';
 
@@ -42,7 +42,7 @@ class Card2 extends StatelessWidget {
                     right: 16,
                     child: Text(
                       recipe.title,
-                      style: FooderlichTheme.lightTextTheme.headline1,
+                      style: CustomTheme.lightTextTheme.headline1,
                     ),
                   ),
                   Positioned(
@@ -52,7 +52,7 @@ class Card2 extends StatelessWidget {
                       quarterTurns: 3,
                       child: Text(
                         recipe.subtitle,
-                        style: FooderlichTheme.lightTextTheme.headline1,
+                        style: CustomTheme.lightTextTheme.headline1,
                       ),
                     ),
                   ),

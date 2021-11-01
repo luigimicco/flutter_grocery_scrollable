@@ -14,34 +14,23 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _selectedIndex = 0;
-
   static List<Widget> pages = <Widget>[
     const ExploreScreen(),
     RecipesScreen(),
     const GroceryScreen(),
   ];
 
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    // 1
     return Consumer<TabManager>(
       builder: (context, tabManager, child) {
         return Scaffold(
           appBar: AppBar(
             title: Text(
-              'Fooderlich',
+              'GroceryScrollable',
               style: Theme.of(context).textTheme.headline6,
             ),
           ),
-          // 2
-          // TODO: Replace body
           body: IndexedStack(index: tabManager.selectedTab, children: pages),
           bottomNavigationBar: BottomNavigationBar(
             selectedItemColor:

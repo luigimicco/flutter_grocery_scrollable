@@ -1,6 +1,5 @@
 import 'package:flutter/painting.dart';
 
-// 1
 enum Importance {
   low,
   medium,

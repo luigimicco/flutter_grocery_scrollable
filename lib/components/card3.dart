@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../fooderlich_theme.dart';
+import '../custom_theme.dart';
 import '../models/models.dart';
 
 class Card3 extends StatelessWidget {
@@ -17,7 +17,7 @@ class Card3 extends StatelessWidget {
       final chip = Chip(
         label: Text(
           element,
-          style: FooderlichTheme.darkTextTheme.bodyText1,
+          style: CustomTheme.darkTextTheme.bodyText1,
         ),
         backgroundColor: Colors.black.withOpacity(0.7),
       );
@@ -64,7 +64,7 @@ class Card3 extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(recipe.title,
-                      style: FooderlichTheme.darkTextTheme.headline2),
+                      style: CustomTheme.darkTextTheme.headline2),
                   const SizedBox(height: 30),
                 ],
               ),

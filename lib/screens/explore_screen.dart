@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../components/components.dart';
 import '../models/models.dart';
 
-import '../api/mock_fooderlich_service.dart';
+import '../api/mock_service.dart';
 
 class ExploreScreen extends StatefulWidget {
   const ExploreScreen({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class ExploreScreen extends StatefulWidget {
 }
 
 class _ExploreScreenState extends State<ExploreScreen> {
-  final mockService = MockFooderlichService();
+  final mockService = MockService();
   late ScrollController _controller;
 
   @override

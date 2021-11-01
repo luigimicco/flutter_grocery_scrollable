@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../fooderlich_theme.dart';
+import '../custom_theme.dart';
 import '../models/models.dart';
 
 class Card1 extends StatelessWidget {
@@ -19,19 +19,19 @@ class Card1 extends StatelessWidget {
           children: [
             Text(
               recipe.subtitle,
-              style: FooderlichTheme.darkTextTheme.bodyText1,
+              style: CustomTheme.darkTextTheme.bodyText1,
             ),
             Positioned(
               child: Text(
                 recipe.title,
-                style: FooderlichTheme.darkTextTheme.headline2,
+                style: CustomTheme.darkTextTheme.headline2,
               ),
               top: 20,
             ),
             Positioned(
               child: Text(
                 recipe.message,
-                style: FooderlichTheme.darkTextTheme.bodyText1,
+                style: CustomTheme.darkTextTheme.bodyText1,
               ),
               bottom: 30,
               right: 0,
@@ -39,7 +39,7 @@ class Card1 extends StatelessWidget {
             Positioned(
               child: Text(
                 recipe.authorName,
-                style: FooderlichTheme.darkTextTheme.bodyText1,
+                style: CustomTheme.darkTextTheme.bodyText1,
               ),
               bottom: 10,
               right: 0,
